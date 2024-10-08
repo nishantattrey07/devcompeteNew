@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["https://devcompete.azurewebsites.net", "http://devcompete.azurewebsites.net","devcompete.azurewebsites.net","*"]
 
 CORS_ALLOWED_ORIGINS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://devcompete.azurewebsites.net", "http://devcompete.azurewebsites.net"]
+CSRF_TRUSTED_ORIGINS = ["https://devcompete.azurewebsites.net", "http://devcompete.azurewebsites.net","http://budevcompete.azurewebsites.net","https://budevcompete.azurewebsites.net"]
 if os.getenv('WEBSITE_HOSTNAME') is not None:
     CORS_ALLOWED_ORIGINS.append('https://'+ os.environ['WEBSITE_HOSTNAME'])
     CORS_ALLOWED_ORIGINS.append('http://'+ os.environ['WEBSITE_HOSTNAME'])
